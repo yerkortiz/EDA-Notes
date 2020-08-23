@@ -60,6 +60,16 @@ class Main {
             arr1[j + 1] = key1; 
         } 
     }
+    static void i(int n){
+        for (int i = 1; i < n; i++){
+            for (int j = i + 1; j <= n; j++){
+                for (int k = 1; k <= j; k++){
+                    System.out.println(k);
+                }
+            }
+        }
+    }
     public static void main(String[] args) {
+        
     }
 }
