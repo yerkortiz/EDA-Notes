@@ -8,7 +8,7 @@ class Main {
     static void binIt(int n) { //solucion 2
         List<Integer> list = new ArrayList<>();
         while(n >= 1) {
-            list.add(n % 2);
+            list.add(n % 2); //inserta en list
             n /= 2;
         }
         Collections.reverse(list); 
@@ -18,6 +18,6 @@ class Main {
         Scanner stdin = new Scanner(System.in);
         int n = stdin.nextInt();
         stdin.close();
-        bin(n);
+        binIt(n);
     }
 }
