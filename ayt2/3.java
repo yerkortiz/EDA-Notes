@@ -14,13 +14,9 @@ class Prefix{
       
     static String prefixToInfix(String prefix_exp) { 
       Stack<String> s= new Stack<String>();
-      
       int l = prefix_exp.length(); 
-      
       for(int i = l-1; i >= 0; i--){ 
-      
         if(isOperator(prefix_exp.charAt(i))){ 
-      
           String op1 = s.peek();   
           s.pop(); 
           String op2 = s.peek();   
